@@ -58,7 +58,7 @@ export default function Home() {
       {/* Bottom control pills */}
       <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-40 flex flex-col items-center space-y-3">
         {/* Main control pill */}
-        <div className="ios-fill-secondary backdrop-blur-xl rounded-full px-3 sm:px-5 py-2.5 flex items-center space-x-2 sm:space-x-3 shadow-2xl border border-white/10 min-w-0">
+        <div className="ios-fill-secondary backdrop-blur-xl rounded-full px-5 sm:px-5 py-3 sm:py-2.5 flex items-center space-x-3 sm:space-x-3 shadow-2xl border border-white/10 min-w-0">
           {objects.length > 0 && (
             <span className="text-sm ios-secondary font-medium whitespace-nowrap">
               {objects.filter(obj => S3Client.isImageFile(obj.Key!) || S3Client.isVideoFile(obj.Key!)).length}
@@ -67,27 +67,27 @@ export default function Home() {
           
           {/* Auto-load toggle */}
           <div className="flex items-center space-x-2 min-w-0 flex-shrink-0">
-            <span className="text-xs sm:text-sm ios-fg font-medium whitespace-nowrap">Auto-load</span>
+            <span className="hidden sm:inline text-sm ios-fg font-medium whitespace-nowrap">Auto-load</span>
             <button
               onClick={() => setAutoLoadImages(!autoLoadImages)}
-              className="w-9 h-5 sm:w-10 sm:h-6 rounded-full transition-all duration-200 flex-shrink-0"
+              className="w-10 h-6 sm:w-10 sm:h-6 rounded-full transition-all duration-200 flex-shrink-0"
               style={{ backgroundColor: autoLoadImages ? 'var(--ios-blue)' : 'var(--ios-tertiary)' }}
             >
-              <div className={`w-3.5 h-3.5 sm:w-4 sm:h-4 bg-white rounded-full transition-transform duration-200 shadow-sm ${
-                autoLoadImages ? 'translate-x-4 sm:translate-x-5' : 'translate-x-0.5 sm:translate-x-1'
+              <div className={`w-4 h-4 sm:w-4 sm:h-4 bg-white rounded-full transition-transform duration-200 shadow-sm ${
+                autoLoadImages ? 'translate-x-5 sm:translate-x-5' : 'translate-x-1 sm:translate-x-1'
               }`} />
             </button>
           </div>
           
-          <div className="w-px h-3 sm:h-4 bg-white/20 flex-shrink-0"></div>
+          <div className="w-px h-4 sm:h-4 bg-white/20 flex-shrink-0"></div>
           
           {s3Client && (
             <button
               onClick={handleRefresh}
               disabled={loading}
-              className="p-1 sm:p-1.5 ios-secondary hover:text-white disabled:opacity-50 transition-colors rounded-full hover:bg-white/10 flex-shrink-0"
+              className="p-1.5 sm:p-1.5 ios-secondary hover:text-white disabled:opacity-50 transition-colors rounded-full hover:bg-white/10 flex-shrink-0"
             >
-              <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
               </svg>
             </button>
@@ -95,9 +95,9 @@ export default function Home() {
           
           <button
             onClick={() => setShowSettings(true)}
-            className="p-1 sm:p-1.5 ios-secondary hover:text-white transition-colors rounded-full hover:bg-white/10 flex-shrink-0"
+            className="p-1.5 sm:p-1.5 ios-secondary hover:text-white transition-colors rounded-full hover:bg-white/10 flex-shrink-0"
           >
-            <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
@@ -106,7 +106,7 @@ export default function Home() {
       </div>
 
       {/* Main content area */}
-      <main className="h-full overflow-auto p-4 pb-24 ios-bg">
+      <main className="h-full overflow-auto p-1 sm:p-4 pb-24 ios-bg">
         {error && (
           <div className="mb-6 rounded-xl p-4 border border-white/10" style={{ backgroundColor: 'rgba(255, 69, 58, 0.1)' }}>
             <div className="flex">
