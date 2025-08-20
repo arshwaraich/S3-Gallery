@@ -1,0 +1,3 @@
+- I want to create a PWA that is a gallery for my s3 bucket (images and videos). The user will provide the Access key ID and Secret access key which the PWA can save.
+- Use consistent colours, maybe parameterize it
+- Project is in s3-gallery/

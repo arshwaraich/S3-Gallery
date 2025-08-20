@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  /* Always use iOS Dark Mode Colors for gallery app */
+  --ios-background: #000000;
+  --ios-foreground: #ffffff;
+  --ios-secondary: #8e8e93;
+  --ios-tertiary: #48484a;
+  --ios-fill: #1c1c1e;
+  --ios-fill-secondary: #2c2c2e;
+  --ios-blue: #0a84ff;
+  --ios-blue-dark: #0056b3;
+  --ios-red: #ff453a;
+  --ios-green: #30d158;
+  --ios-orange: #ff9f0a;
+  --ios-yellow: #ffd60a;
+  --ios-purple: #bf5af2;
+  --ios-pink: #ff375f;
+  --ios-separator: #38383a;
+  --ios-overlay: rgba(0, 0, 0, 0.6);
+}
+
+@theme inline {
+  --color-background: var(--ios-background);
+  --color-foreground: var(--ios-foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--ios-background);
+  color: var(--ios-foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* iOS Color Classes */
+.ios-bg { background-color: var(--ios-background); }
+.ios-fg { color: var(--ios-foreground); }
+.ios-secondary { color: var(--ios-secondary); }
+.ios-tertiary { color: var(--ios-tertiary); }
+.ios-fill { background-color: var(--ios-fill); }
+.ios-fill-secondary { background-color: var(--ios-fill-secondary); }
+.ios-blue { color: var(--ios-blue); }
+.ios-blue-bg { background-color: var(--ios-blue); }
+.ios-blue-hover:hover { background-color: var(--ios-blue-dark); }
+.ios-separator { background-color: var(--ios-separator); }
+.ios-overlay { background-color: var(--ios-overlay); }
+
+/* iOS Surface Colors */
+.ios-surface { 
+  background-color: var(--ios-fill); 
+  border: 1px solid var(--ios-separator);
+}
+
+.ios-surface-secondary { 
+  background-color: var(--ios-fill-secondary); 
+  border: 1px solid var(--ios-separator);
+}
