@@ -30,3 +30,6 @@
 *.m2v
 *.mts
 *.mxf
+
+# MacOS specific files
+*.DS_Store
