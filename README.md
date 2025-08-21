@@ -4,7 +4,7 @@ A Progressive Web App for browsing and viewing images and videos from your Amazo
 
 <img width="1104" height="801" alt="Screenshot 2025-08-20 at 7 54 07 PM" src="https://github.com/user-attachments/assets/70b94797-1720-46d3-ad32-eb81c5eeb413" />
 
-<img width="400" height="801" alt="Screenshot 2025-08-20 at 7 55 04 PM" src="https://github.com/user-attachments/assets/f4f056e6-acd9-43e0-b742-22a4988c6c4a" />
+<img width="392" height="801" alt="Screenshot 2025-08-20 at 7 55 04 PM" src="https://github.com/user-attachments/assets/f4f056e6-acd9-43e0-b742-22a4988c6c4a" />
 <img width="400" height="801" alt="Screenshot 2025-08-20 at 7 55 58 PM" src="https://github.com/user-attachments/assets/ffacb513-8efb-4635-8ced-e45be1ee757d" />
 
 
