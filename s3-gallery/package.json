@@ -1,5 +1,6 @@
 {
   "name": "s3-gallery",
+  "homepage": "https://arshwaraich.github.io/S3-Gallery",
   "version": "0.1.0",
   "private": true,
   "scripts": {
