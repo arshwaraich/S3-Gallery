@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "S3 Gallery",
   description: "A Progressive Web App for browsing S3 bucket images and videos",
-  manifest: "/manifest.json",
+  manifest: "/S3-Gallery/manifest.json",
   themeColor: "#000000",
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
 };
