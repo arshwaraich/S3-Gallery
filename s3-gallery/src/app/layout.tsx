@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "S3 Gallery",
   description: "A Progressive Web App for browsing S3 bucket images and videos",
   manifest: "/manifest.json",
-  themeColor: "#3b82f6",
+  themeColor: "#000000",
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
 };
 
