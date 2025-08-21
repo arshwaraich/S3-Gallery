@@ -7,7 +7,7 @@
   "background_color": "#0f172a",
   "theme_color": "#000000",
   "orientation": "portrait-primary",
-  "scope": "/S3-Gallery",
+  "scope": "/S3-Gallery/",
   "icons": [
     {
       "src": "/S3-Gallery/icon-192.png",
