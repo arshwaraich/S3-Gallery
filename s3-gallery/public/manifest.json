@@ -2,12 +2,12 @@
   "name": "S3 Gallery",
   "short_name": "S3Gallery",
   "description": "A Progressive Web App for browsing S3 bucket images and videos",
-  "start_url": "/S3-Gallery/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#000000",
   "orientation": "portrait-primary",
-  "scope": "/S3-Gallery/",
+  "scope": "/S3-Gallery",
   "icons": [
     {
       "src": "/S3-Gallery/icon-192.png",
